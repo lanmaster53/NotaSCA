@@ -1,0 +1,84 @@
+# Please comment like such to provide context and user categories.
+#
+# General guideline for using this list:
+# 1. Account for comments.
+# 2. Process each rule as a regex.
+#
+# Some options for usage:
+# for i in $(cat wordlist.txt | egrep -v "(^#.*|^$)" | cut -d"#" -f1 | tr -d " \t"); do grep -IR $i .; done
+#
+# non-specific
+crypto
+key
+pass
+password
+rc4
+aes
+md5
+sha0
+sha1
+NOTE
+FUCK
+XXX
+TODO
+println\(
+print\(
+info\(
+error\(
+log\(
+debug\(
+trace\(
+cookie
+read
+readline
+buffer
+os
+command
+exec
+run
+start
+stop
+sleep\(
+catch\(.*?\) { \s+ }
+route
+server
+HTTP_
+request\.
+response\.
+output
+&
+“\s*\+
+\+\s*”
+SELECT
+INSERT
+DELETE
+UPDATE
+WHERE
+FROM
+LIKE
+CREATE TABLE
+write
+document\. 
+window\.
+location\.
+out\.
+file://
+http://
+https://
+open # maybe open\(
+file
+creat
+"r"
+"w"
+"r+"
+"w+"
+outerHTML
+innerHTML
+thread\.
+lock
+mutex
+pool # connection pool, process pool, &c.
+new Function # JS fun
+setTimeout
+setInterval
+eval
