@@ -2,7 +2,7 @@ Right now this is just an idea. While I have some local files that I use for thi
 
 # NotaSCA
 
-Not Another SCA (NotaSCA) is a set of lists containing interesting regular expressions for searching code for security issues. Think FuzzDB for SCA.
+Not Another SCA (NotaSCA) is a set of lists containing interesting regular expressions for searching code for security issues. Think FuzzDB for SCA. Like FuzzDB, which claims to be an "application security scanner, without the scanner," NotaSCA aims to be a "source code security scanner, without the scanner." Although, I will more than likely develop and include a Python scanning engine as well for those that don't want to take the time to wrap the lists in something of their own. But that's the beauty of it. Flexibility.
 
 ## Why Not YASCA?
 
