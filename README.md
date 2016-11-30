@@ -8,7 +8,7 @@ Not Another SCA (NotaSCA) is a set of lists containing interesting regular expre
 
 Yes, I know YASCA does this too (and pretty well I might add), but here are a couple reasons why I'm not a fan of YASCA:
 
-1. Creating/using plugins is too complex.
+1. Creating/using plugins is too complex. (It should just be a list, yo!)
 2. Hosted on sourceforge. (Ick.)
 3. Written in PHP. (Come on now. It's 2016.)
 4. Last code update was in 2013. (That's like 7 eons in appsec.)
@@ -23,7 +23,7 @@ General guidelines for using the lists:
 
 Each line can contain a comment after the regular expression. This comment should be used to comment on the purpose of the given regex. This allows the scanning engine to use this comment as metadata, while not complicating how signatures are created and used.
 
-Some options for usage:
+How flexible is NotaSCA? Here's a quick bash one-liner you can use to scan a code base:
 
 ```
 for i in $(cat general.txt | egrep -v "(^#.*|^$)" | cut -d"#" -f1 | tr -d " \t"); do grep -IR $i .; done
