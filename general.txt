@@ -1,13 +1,3 @@
-# Please comment like such to provide context and user categories.
-#
-# General guideline for using this list:
-# 1. Account for comments.
-# 2. Process each rule as a regex.
-#
-# Some options for usage:
-# for i in $(cat wordlist.txt | egrep -v "(^#.*|^$)" | cut -d"#" -f1 | tr -d " \t"); do grep -IR $i .; done
-#
-# non-specific
 crypto
 key
 pass
